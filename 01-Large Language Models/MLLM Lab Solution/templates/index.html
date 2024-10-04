@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Slide Presenter</title>
+    <link rel="stylesheet" href="/static/main.css">
+    <script src="/static/script.js"></script>
+</head>
+<body>
+    <div id="viewer" class="container">
+        <div>
+            <button id="prev-button" class="arrow" disabled>&#9664;</button>
+            <img id="slide" alt="slide">
+            <button id="next-button" class="arrow" disabled>&#9654;</button>
+        </div>
+        <audio id="audio" controls />
+    </div>
+    <div id="overlay">
+        <div id="spinner"></div>
+    </div>
+</body>
+</html>
