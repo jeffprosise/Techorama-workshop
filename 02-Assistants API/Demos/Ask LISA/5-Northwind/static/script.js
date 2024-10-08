@@ -13,7 +13,10 @@ let userText = null;
 const init = () => {
     // Forget the thread ID
     threadID = "";
-    
+
+    // Load theme from local storage and apply to the page
+    const themeColor = localStorage.getItem("themeColor");
+
     // Load theme from local storage and apply to the page
     document.body.classList.toggle("light-mode", themeColor === "light_mode");
     themeButton.innerText = document.body.classList.contains("light-mode") ? "dark_mode" : "light_mode";
